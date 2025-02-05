@@ -1,13 +1,23 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-  <head> 
-    <meta charset="UTF-8"> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
-    <title>My Website - About</title> 
-  </head> 
-  <body> 
-    </h1>Jessica Anderson</h1> 
-    <p>I am twenty-one and currently pusuring a Bachelors in computer science. I like dogs, cats and also art and video games. My favourite food is Shrimp. I have a typing speed of 96 words per minute on an average day.</p> 
-    <img src="{{ url_for('static', filename='cat.png') }}" alt="Cat Image">
-  </body> 
+    <title>My Website - About</title>
+  </head>
+  <body>
+    
+    <div class="header">
+      <h1>Jessica Anderson</h1>
+    </div>
+    
+    <div class="bio">
+      <p>I am twenty-one and currently pursuing a Bachelor's in Computer Science. I like dogs, cats, and also art and video games. My favourite food is shrimp. I have a typing speed of 96 words per minute on an average day.</p>
+    </div>
+    
+    <div class="image-container">
+      <img src="{{ url_for('static', filename='cat.png') }}" alt="Cat Image">
+    </div>
+    
+  </body>
 </html>
